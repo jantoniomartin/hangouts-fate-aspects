@@ -1,33 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-<!-- Licensed under the Apache License, Version 2.0 (the "License"); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *	
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License
--->
     <ModulePrefs title="FATE Aspects">
         <Require feature="rpc" />
         <Require feature="views" />
-        <Require feature="locked-domain" />
     </ModulePrefs>
     <Content type="html"><![CDATA[
-        <script src="//hangoutsapi.talkgadget.google.com/hangouts/_/api/hangout.js?v=1.4"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/start/jquery-ui.css" />
-        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-        <script type="text/javascript">
-            $(function() {
-                console.log("Starting app...");
-            });
-        </script>
-        <p>FATE Aspects</p>
+        <script src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script>
+        <div id="aspects">
+            <h3>Scenario aspects</h3>
+            <div>
+                <ul id="scenario"></ul>
+                <form id="scenario_add" action="">
+                    <input id="scenario_name" type="text" />
+                </form>
+            </div>
+            <h3>Situation aspects</h3>
+            <div>
+                <ul id="scene"></ul>
+                <form id="scene_add" action="">
+                    <input id="scene" type="text" />
+                </form>
+            </div>
+        </div>
     ]]></Content>
 </Module>
 
