@@ -1,0 +1,14 @@
+#container {
+    padding: 0.5 em;
+}
+
+ul li {
+    list-style-type: square;
+}
+
+span.delete {
+    margin-left: 1em;
+    padding: 0;
+    color: #999;
+    cursor: pointer;
+}
