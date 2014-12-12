@@ -6,12 +6,12 @@
     </ModulePrefs>
     <Content type="html"><![CDATA[
         <script src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script>
+        <link rel="stylesheet" href="//raw.githubusercontent.com/jantoniomartin/hangouts-fate-aspects/master/ggs/fate-aspects.css" />
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/start/jquery-ui.css" />
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 
         <script src="//raw.githubusercontent.com/jantoniomartin/hangouts-fate-aspects/master/ggs/fate-aspects.js"></script>
-        <link rel="stylesheet" href="//raw.githubusercontent.com/jantoniomartin/hangouts-fate-aspects/master/ggs/fate-aspects.css" />
         
         <div id="container">
         <div id="aspects">
@@ -26,7 +26,7 @@
             <div>
                 <ul id="scene"></ul>
                 <form id="scene_add" action="">
-                    <input id="scene" type="text" />
+                    <input id="scene_name" type="text" />
                 </form>
             </div>
         </div>
