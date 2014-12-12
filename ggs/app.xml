@@ -11,7 +11,9 @@
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 
         <script src="//raw.githubusercontent.com/jantoniomartin/hangouts-fate-aspects/master/ggs/fate-aspects.js"></script>
-
+        <link rel="stylesheet" href="//raw.githubusercontent.com/jantoniomartin/hangouts-fate-aspects/master/ggs/fate-aspects.css" />
+        
+        <div id="container">
         <div id="aspects">
             <h3>Scenario aspects</h3>
             <div>
@@ -27,6 +29,7 @@
                     <input id="scene" type="text" />
                 </form>
             </div>
+        </div>
         </div>
     ]]></Content>
 </Module>
