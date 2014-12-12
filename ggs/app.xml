@@ -19,14 +19,14 @@
             <div>
                 <ul id="scenario"></ul>
                 <form id="scenario_add" action="">
-                    <input id="scenario_name" type="text" />
+                    <input id="scenario_name" type="text" placeholder="Write an aspect" />
                 </form>
             </div>
             <h3>Situation aspects</h3>
             <div>
                 <ul id="scene"></ul>
                 <form id="scene_add" action="">
-                    <input id="scene_name" type="text" />
+                    <input id="scene_name" type="text" placeholder="Write an aspect" />
                 </form>
             </div>
         </div>
