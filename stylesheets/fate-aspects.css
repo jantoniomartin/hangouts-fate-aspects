@@ -2,8 +2,13 @@
     margin: 0.2em;
 }
 
+ul {
+    padding-left: 1em;
+}
+
 ul li {
     list-style-type: square;
+    text-transform: capitalize;
 }
 
 span.delete {
@@ -11,4 +16,8 @@ span.delete {
     padding: 0;
     color: #999;
     cursor: pointer;
+}
+
+.ui-accordion .ui-accordion-content {
+    padding: 0.5em 0.5em;
 }
