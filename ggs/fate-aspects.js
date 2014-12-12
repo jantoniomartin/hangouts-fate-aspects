@@ -17,7 +17,7 @@ function reloadScenario() {
             l += '<span class="delete" ';
             l += 'onClick="deleteScenarioAspect(' + i + ');"';
             l += '>&otimes;</span>';
-            l += '</li>;
+            l += '</li>';
             $('#scenario').append(l);
         }
     }
