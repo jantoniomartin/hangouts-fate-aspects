@@ -6,7 +6,7 @@
     </ModulePrefs>
     <Content type="html"><![CDATA[
         <script src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script>
-        <link rel="stylesheet" type="text/css" href="//raw.githubusercontent.com/jantoniomartin/hangouts-fate-aspects/master/ggs/fate-aspects.css" />
+        <link rel="stylesheet" type="text/css" href="//jantoniomartin.github.io/hangouts-fate-aspects/stylesheets/fate-aspects.css" />
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/start/jquery-ui.css" />
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
