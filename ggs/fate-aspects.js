@@ -7,6 +7,10 @@ gapi.hangout.onApiReady.add(function(eventObj) {
     apiReady = true;
 });
 
+gapi.hangout.data.onStateChanged.add(function(eventObj) {
+    reloadScenario();
+});
+
 function reloadScenario() {
     if (apiReady) {
         scenario = JSON.parse(gapi.hangout.data.getValue('fate_scenario'));
@@ -33,7 +37,7 @@ function createScenarioAspect(name) {
         gapi.hangout.data.submitDelta(
             {'fate_scenario': JSON.stringify(current)}
         );
-        reloadScenario();
+        console.log("Added aspect: " + name);
     }
 }
 
