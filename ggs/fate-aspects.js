@@ -31,7 +31,7 @@ function createScenarioAspect(name) {
         current = JSON.parse(gapi.hangout.data.getValue('fate_scenario'));
         current[current.length] = name;
         gapi.hangout.data.submitDelta(
-            {'fate_scenario': JSON.strigify(current)}
+            {'fate_scenario': JSON.stringify(current)}
         );
         reloadScenario();
     }
