@@ -2,15 +2,30 @@ var apiReady = false;
 
 gapi.hangout.onApiReady.add(function(eventObj) {
     console.log('Hangouts API is ready.');
-    gapi.hangout.data.setValue('fate_scenario', '[]');
-    gapi.hangout.data.setValue('fate_scene', '[]');
     apiReady = true;
+    /* The gamemaster should be the first user who opened the application.
+     * Try to find it */
+    if ( gapi.hangout.data.getValue('fate_owner') === undefined ) {
+        gapi.hangout.data.setValue('fate_scenario', '[]');
+        gapi.hangout.data.setValue('fate_scene', '[]');
+        owner = gapi.hangout.getLocalParticipant();
+        gapi.hangout.data.setValue('fate_owner', owner.person.id);
+    }
+    else {
+        reloadScenario();
+        reloadScene();
+    }
 });
 
 gapi.hangout.data.onStateChanged.add(function(eventObj) {
     reloadScenario();
     reloadScene();
 });
+
+function amOwner() {
+    owner_id = gapi.hangout.data.getValue('fate_owner');
+    return owner_id === gapi.hangout.getLocalParticipant().person.id;
+}
 
 function reloadScenario() {
     if (apiReady) {
