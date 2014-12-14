@@ -11,7 +11,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 
         <link rel="stylesheet" type="text/css" href="//jantoniomartin.github.io/hangouts-fate-aspects/stylesheets/fate-aspects.css" />
-        <script src="//jantoniomartin.github.io/hangouts-fate-aspects/stylesheets/fate-aspects.js"></script>
+        <script src="//jantoniomartin.github.io/hangouts-fate-aspects/javascripts/fate-aspects.js"></script>
         
         <div id="container">
         <div id="aspects">
