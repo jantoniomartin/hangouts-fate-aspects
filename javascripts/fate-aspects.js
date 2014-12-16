@@ -1,5 +1,20 @@
 var apiReady = false;
 
+var entityMap = {
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;",
+    "/": "&#x2F;"
+};
+
+function escapeHtml(string) {
+    return String(string).replace(/[&<>"'\/]/g, function (s) {
+        return entityMap[s];
+    });
+}
+
 gapi.hangout.onApiReady.add(function(eventObj) {
     console.log('Hangouts API is ready.');
     apiReady = true;
@@ -33,7 +48,7 @@ function reloadScenario() {
         $('#scenario').empty();
         for (i=0; i < scenario.length; i++) {
             var l = '<li>';
-            l += scenario[i];
+            l += escapeHtml(scenario[i]);
             l += '<span class="delete" ';
             l += 'onClick="deleteScenarioAspect(' + i + ');"';
             l += '>&otimes;</span>';
@@ -52,7 +67,7 @@ function reloadScene() {
         $('#scene').empty();
         for (i=0; i < scene.length; i++) {
             var l = '<li>';
-            l += scene[i];
+            l += escapeHtml(scene[i]);
             l += '<span class="delete" ';
             l += 'onClick="deleteSceneAspect(' + i + ');"';
             l += '>&otimes;</span>';
